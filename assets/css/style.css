@@ -85,33 +85,33 @@ html{
 }
 
 body{
-  margin:  0 0 var(--header-height) 0;
+  margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color:  var(--text-color);
 }
 
-h1,h2,h3,h4{
+h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 /*==================== REUSABLE CSS CLASSES ====================*/
   .section{
-    padding:  2rem 0 4rem;
+    padding: 2rem 0 4rem;
   }
 
   .section__title{
@@ -124,8 +124,7 @@ img{
     margin-bottom: var(--mb-3);
   }
 
-  .section__title,
-  .section__subtitle{
+  .section__title, .section__subtitle{
     text-align: center;
   }
 /*==================== LAYOUT ====================*/
@@ -159,8 +158,7 @@ img{
   align-items: center;
 }
 
-.nav__logo,
-.nav__toggle{
+.nav__logo, .nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -168,6 +166,39 @@ img{
 .nav__logo:hover{
   color: var(--first-color);
 }
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .3s;
+  }
+}
+
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
 
 /* show menu */
 
