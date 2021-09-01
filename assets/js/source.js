@@ -155,4 +155,4 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-// Activate / deactivate the theme manually with the button
+// Activate / deactivate the theme manually with the button //
