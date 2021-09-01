@@ -577,6 +577,29 @@ img {
   display: block;
 }
 
+#syllabus {
+  display: inline-flex;
+  align-items: center;
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: .25rem;
+  border-radius: .17rem;
+  font-weight: var(--font-small);
+}
+
+#syllabus:hover {
+  background-color: var(--first-color-alt);
+}
+
+#website {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+  color: var(--text-color);
+}
+
+
 /*==================== SERVICES ====================*/
 
 /* Active Modal */
